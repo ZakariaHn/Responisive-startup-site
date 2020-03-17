@@ -125,6 +125,7 @@ h1 {
 @media screen and (max-width: 790px) {
   .container {
     width: 90vw;
+    padding-right: 3rem;
   }
 
   .photos {
@@ -133,6 +134,7 @@ h1 {
 
   .photo2 {
     right: 4rem;
+    top: 2rem;
   }
   .text-and-buttons {
     margin-top: 7rem;
@@ -172,6 +174,7 @@ h1 {
   .container {
     width: 100%;
     height: 60%;
+    padding: 0;
   }
   .nav-bar {
     width: 95%;
@@ -208,15 +211,17 @@ h1 {
     height: 35%;
     width: 100vw;
   }
-  .photo1,
-  .photo2 {
+
+  .photo1 {
+    top: 0;
+    margin-right: 35vw;
     height: 30vh;
     width: 80vw;
   }
-  .photo1 {
-    margin-right: 35vw;
-  }
   .photo2 {
     margin-right: -25vw;
+    top: 1rem;
+    height: 30vh;
+    width: 80vw;
   }
 }
