@@ -5,6 +5,11 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  background-color: gray;
 }
 .pg-image {
   background-image: url("../img/bg_001.jpg");
@@ -90,6 +95,8 @@ h1 {
 }
 .photos {
   margin-top: 3rem;
+  position: sticky;
+  width: 50%;
 }
 .photo1 {
   background-image: url("../img/phone_001.png");
@@ -99,7 +106,8 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  position: relative;
+  position: absolute;
+  right: 0;
 }
 
 .photo2 {
@@ -109,7 +117,47 @@ h1 {
   margin-right: 2rem;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 22vh;
-  right: 22vw;
+  right: -2rem;
+  top: 1rem;
   position: absolute;
+}
+
+@media screen and (max-width: 790px) {
+  .container {
+    width: 90vw;
+  }
+
+  .photos {
+    width: 100vw;
+  }
+  .text-and-buttons {
+    width: 100vw;
+  }
+  .photo2 {
+    right: 4rem;
+  }
+  .text-and-buttons {
+    margin-top: 10rem;
+  }
+  .top {
+    justify-content: stretch;
+  }
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-bar * {
+    font-size: 1.5vw;
+  }
+  h1 {
+    font-size: 3vw;
+  }
+  p {
+    font-size: 1.8vw;
+  }
+  .learn-more-btn,
+  .get-app-btn {
+    font-size: 1.5vw;
+  }
 }
