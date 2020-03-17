@@ -11,6 +11,9 @@ body {
   font-size: 16px;
   background-color: gray;
 }
+
+/* Set background image */
+
 .pg-image {
   background-image: url("../img/bg_001.jpg");
   width: 100%;
@@ -20,13 +23,13 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .container {
   width: 50%;
   height: 75%;
-
   margin-top: 2rem;
 }
+
+/* top of the page(Logo and navigation bar) */
 
 .top {
   width: 100%;
@@ -44,13 +47,14 @@ body {
   height: 100%;
   margin-left: 1rem;
 }
-
 .nav-bar * {
   display: inline;
   margin-right: 1rem;
   font-size: 0.8vw;
   color: white;
 }
+
+/* Styling the main lay-out */
 
 .main {
   width: 100%;
@@ -59,6 +63,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+/* Left side of the lay-out(text and buttons) */
 
 .text-and-buttons {
   margin: 5rem 0 0 1rem;
@@ -74,6 +80,8 @@ h1 {
   font-size: 2vw;
 }
 
+/* Styling the buttons  */
+
 .learn-more-btn,
 .get-app-btn {
   width: 40%;
@@ -85,14 +93,15 @@ h1 {
   color: white;
   font-size: 0.9vw;
 }
-
 .learn-more-btn {
   background-color: #17d139;
 }
-
 .get-app-btn {
   background-color: #46a1da;
 }
+
+/* Right side of the lay-out(photos) */
+
 .photos {
   margin-top: 3rem;
   position: sticky;
@@ -109,7 +118,6 @@ h1 {
   position: absolute;
   right: 0;
 }
-
 .photo2 {
   background-image: url("../img/phone_002.png");
   width: 23vw;
@@ -122,23 +130,11 @@ h1 {
   position: absolute;
 }
 
+/* Responsive for 790px */
 @media screen and (max-width: 790px) {
   .container {
     width: 90vw;
     padding-right: 3rem 0 0 3rem;
-  }
-
-  .photos {
-    width: 100vw;
-  }
-
-  .photo2 {
-    right: 4rem;
-    top: 2rem;
-  }
-  .text-and-buttons {
-    margin-top: 7rem;
-    width: 100vw;
   }
   .top {
     justify-content: stretch;
@@ -157,11 +153,24 @@ h1 {
   p {
     font-size: 1.8vw;
   }
+  .text-and-buttons {
+    margin-top: 7rem;
+    width: 100vw;
+  }
   .learn-more-btn,
   .get-app-btn {
     font-size: 1.5vw;
   }
+  .photos {
+    width: 100vw;
+  }
+  .photo2 {
+    right: 4rem;
+    top: 2rem;
+  }
 }
+
+/* Responsive for 375px */
 
 @media screen and (max-width: 375px) {
   .top,
@@ -185,10 +194,6 @@ h1 {
     font-size: 75%;
     margin: 0 0 0 1rem;
   }
-  .text-and-buttons,
-  .photos {
-    margin: 4rem 0 0 0;
-  }
   h1 {
     font-size: 1.5rem;
     margin: 0 3.5rem 0 3.5rem;
@@ -197,10 +202,13 @@ h1 {
     margin: 2rem;
     font-size: 3.7vw;
   }
-
   .text-and-buttons {
     text-align: center;
     height: 40%;
+  }
+  .text-and-buttons,
+  .photos {
+    margin: 4rem 0 0 0;
   }
   .learn-more-btn,
   .get-app-btn {
@@ -211,7 +219,6 @@ h1 {
     height: 35%;
     width: 100vw;
   }
-
   .photo1 {
     top: 0;
     margin-right: 35vw;
@@ -225,6 +232,8 @@ h1 {
     width: 80vw;
   }
 }
+
+/* Responsive for 360px */
 
 @media screen and (max-width: 360px) {
   h1 {
