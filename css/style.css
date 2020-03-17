@@ -72,7 +72,7 @@ h1 {
 .learn-more-btn,
 .get-app-btn {
   width: 40%;
-  height: 2rem;
+  height: 2.4rem;
   margin-right: 0.5rem;
   font-weight: bold;
   border: none;
@@ -88,7 +88,9 @@ h1 {
 .get-app-btn {
   background-color: #46a1da;
 }
-
+.photos {
+  margin-top: 3rem;
+}
 .photo1 {
   background-image: url("../img/phone_001.png");
   width: 23vw;
@@ -107,7 +109,7 @@ h1 {
   margin-right: 2rem;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 16vh;
+  top: 22vh;
   right: 22vw;
   position: absolute;
 }
