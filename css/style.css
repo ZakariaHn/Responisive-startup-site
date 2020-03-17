@@ -130,14 +130,13 @@ h1 {
   .photos {
     width: 100vw;
   }
-  .text-and-buttons {
-    width: 100vw;
-  }
+
   .photo2 {
     right: 4rem;
   }
   .text-and-buttons {
-    margin-top: 10rem;
+    margin-top: 7rem;
+    width: 100vw;
   }
   .top {
     justify-content: stretch;
@@ -159,5 +158,65 @@ h1 {
   .learn-more-btn,
   .get-app-btn {
     font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .top,
+  .main {
+    display: block;
+  }
+  .main {
+    height: 100vh;
+  }
+  .container {
+    width: 100%;
+    height: 60%;
+  }
+  .nav-bar {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-bar * {
+    font-size: 75%;
+    margin: 0 0 0 1rem;
+  }
+  .text-and-buttons,
+  .photos {
+    margin: 4rem 0 0 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin: 0 3.5rem 0 3.5rem;
+  }
+  p {
+    margin: 2rem;
+    font-size: 3.7vw;
+  }
+
+  .text-and-buttons {
+    text-align: center;
+    height: 40%;
+  }
+  .learn-more-btn,
+  .get-app-btn {
+    font-size: 3.4vw;
+  }
+  .photos {
+    margin: 0;
+    height: 35%;
+    width: 100vw;
+  }
+  .photo1,
+  .photo2 {
+    height: 30vh;
+    width: 80vw;
+  }
+  .photo1 {
+    margin-right: 35vw;
+  }
+  .photo2 {
+    margin-right: -25vw;
   }
 }
